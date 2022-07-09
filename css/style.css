@@ -145,11 +145,19 @@ video{
 .video-playy{
     position: relative;
 }
-.video-playy img{
-    width: 100%;
+.video-cover{
     box-shadow: 3px 3px 1px #372e30;
     border-radius: 25px;
+    width: 100%;
 }
+.add{
+    display: flex;
+    justify-content: space-between;
+}
+.imag{
+ position: relative;
+}
+
 .main-container{
     padding: 0px 86px;
 }
@@ -367,3 +375,91 @@ ul.d-flex.socail-media-handler li {
     
     
 }
+@media(max-width:768px){
+    .banner-left{
+        order: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .banner-right{
+        order: 1;
+        width: 77%;
+    }
+    .add{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-left h1 br {
+        display: none;
+    }
+    .banner-left p br {
+        display: none;
+    }
+    .banner h1{
+        text-align: center;
+    }
+    .banner p{
+        text-align: center;
+    }
+    .section-third img {
+        width: 50%;
+    }
+    .details br{
+        display: none;
+    }
+    .details{
+        text-align: center;
+    }
+    .image {
+        width: 50%;
+    }
+    .res-im{
+        width: 51%;
+        height: 84%;
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+    }
+    .shadow-in{
+        border-radius: 0px;
+        background: linear-gradient(145deg, #e6e6e6, #ffffff);
+        box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top:30px ;
+        padding-bottom: 30px;
+    }
+    .shadow-out{
+        border-radius: 0px;
+        background: #ffffff;
+        box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top:30px ;
+        padding-bottom: 30px;
+    }
+    .section-third .row {
+        padding-top: 0px;
+        
+    }
+    .a-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+}
+
+

@@ -13,6 +13,75 @@ body{
 a{
     text-decoration: none!important;
 }
+/* hambargar */
+.collaps-nav-bar{
+    margin-top: 100px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 120px;
+    
+}
+.show-collaps{
+    display: flex;
+}
+.m-t{
+    margin-top: 0px!important;
+}
+.shadow-hide{
+    box-shadow: 0 0px 0px 0px rgb(0 0 0 / 20%)!important;
+}
+
+.menu-btn{
+    width: 54px;
+    height: 40px;
+    border: 0px solid black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.menu-btn__burger{
+    width: 30px;
+    height: 4px;
+    background: #eb6740;
+    border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(255,101,47,.2);
+   transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after{
+    content: ' ';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #eb6740;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(10px);
+  }
+  .menu-btn.open .menu-btn__burger{
+      transform: translateX(-50px) ;
+      background-color: transparent;
+      box-shadow: none;
+  }
+
+  .menu-btn.menu-btn.open .menu-btn__burger::before {
+    transform:rotate(45deg) translate(35px,-35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform:rotate(-45deg) translate(35px,35px);
+  }
+/* end hambargar */
 nav{
     background-color: #fff;
     width: 100%;
@@ -63,7 +132,6 @@ nav{
     width: 100%;
     padding-top:80px!important;
     padding-bottom: 100px!important;
-    margin-top: 70px;
 }
 .banner-list{
     margin: 0px;
@@ -375,7 +443,7 @@ ul.d-flex.socail-media-handler li {
     
     
 }
-@media(max-width:768px){
+@media(max-width:767.98px){
     .banner-left{
         order: 2;
         width: 100%;
@@ -459,6 +527,13 @@ ul.d-flex.socail-media-handler li {
     }
     .show{
         display: block;
+    }
+}
+@media(max-width:575.98px) {
+  
+    .s-a-center{
+        text-align: center;
+        padding-bottom: 20px;
     }
 }
 

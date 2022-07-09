@@ -26,3 +26,11 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+let menuEl=document.getElementById('menu');
+let signUpel=document.getElementById("signUp");
+menuEl.addEventListener("click",()=>{
+    menuEl.classList.toggle("open");
+    signUpel.classList.toggle("ml-3");
+    signUpel.classList.toggle("mt-3");
+});

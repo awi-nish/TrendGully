@@ -9,6 +9,7 @@ body{
     padding: 0px;
     max-width: 1920px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none!important;
